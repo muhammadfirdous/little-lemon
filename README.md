@@ -71,9 +71,6 @@ The project is deployed on GitHub Pages. To access the live version, visit:
 
 Feel free to fork this repository and contribute by submitting a pull request. Ensure your code adheres to the project's structure and guidelines.
 
-## License
-
-This project is open-source and available under the [MIT License](LICENSE).
 
 ## Contact
 
