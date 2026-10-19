@@ -1,80 +1,52 @@
 # Little Lemon
 
-Welcome to **Little Lemon**, a web application built using modern technologies. This project demonstrates a well-structured implementation of a React application with REST API integration, styled with Bootstrap, and deployed on GitHub.
+A React restaurant website with menu highlights, testimonials, an about page, and a table reservation interface.
 
 ## Features
 
-- **React-based Frontend**: Developed using React.js for dynamic and responsive UI.
-- **REST API Integration**: Axios is used to fetch and manage data from APIs.
-- **User Authentication**: Includes login and registration functionality.
-- **User Management**: Displays a list of users retrieved from the API.
-- **Bootstrap Styling**: Clean and responsive design using Bootstrap.
-- **Deployed on GitHub**: Easily accessible for demonstration purposes.
+- Restaurant landing page with specials and testimonial carousels.
+- Navigation between home, about, reservations, order, login, and confirmation pages.
+- Reservation fields for date, party size, contact details, and seating preferences.
+- Date-based sample availability generated locally.
 
-## Technologies Used
+## Project scope
 
-- **React.js**: JavaScript library for building user interfaces.
-- **Axios**: Promise-based HTTP client for API calls.
-- **Bootstrap**: CSS framework for responsive design.
-- **REST API**: Backend interaction using endpoints (e.g., Reqres API).
-- **GitHub Pages**: For deployment.
+This is a frontend demonstration. `src/bookingsAPI.js` generates sample time slots and its submit helper returns success without storing a reservation. The booking button routes to a confirmation page; there is no production reservation service or implemented login backend in this repository.
 
+## Run locally
 
-## Setup Instructions
+Install Node.js and npm, then:
 
-To run this project locally, follow these steps:
+```bash
+git clone https://github.com/muhammadfirdous/little-lemon.git
+cd little-lemon
+npm ci
+npm start
+```
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/muhammadfirdous/little-lemon.git
-   cd little-lemon
-   ```
+Open `http://localhost:3000`.
 
-2. **Install Dependencies**:
-   Make sure you have [Node.js](https://nodejs.org/) installed, then run:
-   ```bash
-   npm install
-   ```
+## Build
 
-3. **Start the Development Server**:
-   ```bash
-   npm start
-   ```
-   The app will be available at [http://localhost:3000](http://localhost:3000).
+```bash
+npm run build
+```
 
-4. **Build for Production**:
-   ```bash
-   npm run build
-   ```
-   This will create an optimized production build in the `build` directory.
+Create React App writes the production files to `build/`. A deployment host must support the application's client-side routes.
 
-## Usage
+## Stack
 
-- Navigate to the Login page to sign in with valid credentials.
-- Use the Register page to create a new account.
-- View the User List to see all users fetched from the API.
+React, React Router, React Responsive Carousel, Create React App, and CSS.
 
-## API Endpoints
+## Project layout
 
-The application integrates with a REST API (e.g., Reqres API) with the following endpoints:
+| Path | Purpose |
+| --- | --- |
+| `src/components/pages/` | Top-level pages |
+| `src/components/sections/` | Restaurant sections and reservation form |
+| `src/components/Routing.js` | Route definitions |
+| `src/bookingsAPI.js` | Local sample booking helpers |
+| `src/assets/` | Food images, logos, and interface assets |
+| `public/` | Static application shell |
 
-- **POST** `/login` - Authenticate user credentials.
-- **POST** `/register` - Register a new user.
-- **GET** `/users` - Retrieve a list of users.
-
-## Deployment
-
-The project is deployed on GitHub Pages. To access the live version, visit:
-[https://github.com/muhammadfirdous/little-lemon](https://github.com/muhammadfirdous/little-lemon)
-
-## Contributing
-
-Feel free to fork this repository and contribute by submitting a pull request. Ensure your code adheres to the project's structure and guidelines.
-
-
-## Contact
-
-For any inquiries or feedback, feel free to contact:
-
-**Muhammad Firdous**  
-[GitHub Profile](https://github.com/muhammadfirdous)
+[More projects by Muhammad Firdous](https://github.com/muhammadfirdous)
